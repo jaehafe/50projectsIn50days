@@ -7,9 +7,12 @@ let activeSlide = 0
 
 rightBtn.addEventListener('click', () => {
   activeSlide++
+  // console.log(activeSlide);
 
   if (activeSlide > slides.length - 1) {
+    
     activeSlide = 0
+    // console.log(activeSlide);
   }
 
   setBgToBody()
@@ -18,9 +21,11 @@ rightBtn.addEventListener('click', () => {
 
 leftBtn.addEventListener('click', () => {
   activeSlide--
+  // console.log(activeSlide);
 
   if (activeSlide < 0) {
     activeSlide = slides.length - 1
+    // console.log(activeSlide);
   }
 
   setBgToBody()
